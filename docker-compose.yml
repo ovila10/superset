@@ -60,6 +60,8 @@ services:
     volumes: *superset-volumes
     environment:
       CYPRESS_CONFIG: "${CYPRESS_CONFIG}"
+      VIRTUAL_HOST: "dataviz.lptui.site"
+      VIRTUAL_PORT: "443"
 
   superset-init:
     image: *superset-image
